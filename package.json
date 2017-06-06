@@ -1,6 +1,6 @@
 {
   "name": "json-model-assign",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Pure function for emitting factories for building models from JSON defaults, reusing the Object.assign signature and including derived non-null type validation",
   "main": "index.js",
   "repository": "git@github.com:KrazyLabs/json-assign.git",
