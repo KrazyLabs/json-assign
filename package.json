@@ -1,0 +1,17 @@
+{
+  "name": "json-assign",
+  "version": "1.0.0",
+  "description": "Pure function for emitting factories for building models from JSON defaults, reusing the Object.assign signature and including derived non-null type validation",
+  "main": "index.js",
+  "repository": "git@github.com:KrazyLabs/json-assign.git",
+  "author": "b3ngineer <ben.harris.when@gmail.com>",
+  "license": "Apache-2.0",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^4.0.2",
+    "mocha": "^3.4.2"
+  }
+}
