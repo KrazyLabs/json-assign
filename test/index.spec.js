@@ -1,6 +1,5 @@
 const jsonAssign = require('../index.js')
 const expect = require('chai').expect
-
 const TEST_JSON = `{ "id": 1 }`
 
 describe('model', function() {
