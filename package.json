@@ -3,7 +3,7 @@
   "version": "1.0.2",
   "description": "Pure function for emitting factories for building models from JSON defaults, reusing the Object.assign signature and including derived non-null type validation",
   "main": "index.js",
-  "repository": "git@github.com:KrazyLabs/json-assign.git",
+  "repository": "git@github.com:KrazyLabs/json-model-assign.git",
   "author": "b3ngineer",
   "license": "Apache-2.0",
   "scripts": {
