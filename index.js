@@ -8,6 +8,8 @@ module.exports = (json, strict) =>
         throw new Error(
           'Supplied argument "json" can only be a string or an object'
         )
+      } else {
+        typedef = json
       }
     } catch (parseError) {
       throw parseError

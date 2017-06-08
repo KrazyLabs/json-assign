@@ -6,7 +6,7 @@ Pure function for emitting factories for building models from JSON defaults, reu
 npm install --save json-model-assign
 ```
 
-or 
+or
 
 ```
 yarn add json-model-assign
@@ -17,12 +17,8 @@ Predefining shared models (as factories) for use in both an API backend and cons
 
 ```
 // MyModel.js
-const factory = require('json-model-assign')
-
-module.exports = () => {
-  const json = '{ "id": 0, "title": "" }' // can also be an object
-  return factory(json, true)  // strict mode on for type validation
-}
+const json = '{ "id": 0, "title": "" }' // can also be an object
+module.exports = require('json-model-assign')(json)
 ```
 
 # Another Use Case
@@ -30,6 +26,8 @@ Preparing a model for transport.
 
 ```
 const modelFactory = require('MyModel')
+// ... form UI ...
+// model for HTTP JSON POST
 const model = modelFactory({ id: formResultsId, title: formResultsTitle });
 ```
 
