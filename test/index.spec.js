@@ -18,6 +18,15 @@ describe('model', function() {
     expect(model.id).to.equal(3)
   })
 
+  // ISSUE:
+  it('should merge the last values indiscriminately', () => {
+    let model = jsonAssign({ email: '', password: '', uid: '' })(
+      { email: 'test@test.com' },
+      { uid: '123' }
+    )
+    expect(model.uid).to.equal('123')
+  })
+
   it('should not return properties that are not in the JSON model', () => {
     let model = jsonAssign(TEST_JSON)({ id: 2 }, { foo: 3 })
     expect(model.foo).to.be.undefined
